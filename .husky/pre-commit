@@ -1,1 +1,1 @@
-pnpm biome check --staged --reporter=summary
+pnpm biome check --staged --no-errors-on-unmatched --reporter=summary --files-ignore-unknown=true

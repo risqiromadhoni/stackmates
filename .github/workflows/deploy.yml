@@ -29,6 +29,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Check linter
-        run: pnpm biome check --reporter=github .
+        run: pnpm biome ci --reporter=github .
       - name: Build
         run: pnpm run build
