@@ -1,0 +1,53 @@
+{
+  "name": "stackmates",
+  "description": "StackMates is the ultimate social finance platform that helps you and your friends save, invest, and grow wealth together. Create group savings, link bank accounts, vote on investments, and track financial goals – all in one app. Join the movement and start stacking today!",
+  "version": "0.0.0",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "version": "changeset version",
+    "release": "changeset publish"
+  },
+  "keywords": [
+    "StackMates",
+    "SaveTogether",
+    "InvestSmart",
+    "WealthWithFriends",
+    "SmartMoneyMoves",
+    "FinanceMadeSocial",
+    "GrowYourMoney",
+    "GroupSavings"
+  ],
+  "author": {
+    "name": "Risqi Romadhoni",
+    "email": "risqi.romadhoni96@gmail.com",
+    "url": "https://www.heyris.me"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.28.1",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "commitizen": "^4.3.1",
+    "cz-git": "^1.11.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "@biomejs/biome"
+    ],
+    "onlyBuiltDependencies": [
+      "@biomejs/biome"
+    ]
+  }
+}
