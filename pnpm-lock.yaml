@@ -38,6 +38,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@stackmates/components':
+        specifier: workspace:*
+        version: link:../../packages/components
       next:
         specifier: 15.2.2
         version: 15.2.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)

@@ -47,7 +47,10 @@
       "@biomejs/biome"
     ],
     "onlyBuiltDependencies": [
-      "@biomejs/biome"
+      "@biomejs/biome",
+      "@swc/core",
+      "esbuild",
+      "sharp"
     ]
   }
 }
