@@ -8,8 +8,8 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": ["node_modules", "dist"],
-		"include": ["commitlint.config.js"]
+		"ignore": ["node_modules", "dist", "tsconfig*.json"],
+		"include": ["commitlint.config.js", "packages", "apps"]
 	},
 	"formatter": {
 		"enabled": true,
