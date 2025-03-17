@@ -5,7 +5,7 @@
   "type": "module",
   "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
     "version": "changeset version",
     "release": "changeset publish"
@@ -47,7 +47,10 @@
       "@biomejs/biome"
     ],
     "onlyBuiltDependencies": [
-      "@biomejs/biome"
+      "@biomejs/biome",
+      "@swc/core",
+      "esbuild",
+      "sharp"
     ]
   }
 }
