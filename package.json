@@ -8,7 +8,8 @@
     "build": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
     "version": "changeset version",
-    "release": "changeset publish"
+    "release": "changeset publish",
+    "test": "vitest --workspace=vitest.workspace.ts"
   },
   "keywords": [
     "StackMates",
@@ -35,22 +36,19 @@
     "commitizen": "^4.3.1",
     "cz-git": "^1.11.1",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.0"
+    "lint-staged": "^15.5.0",
+    "vitest": "^3.0.9"
   },
   "config": {
     "commitizen": {
       "path": "node_modules/cz-git"
     }
   },
-  "pnpm": {
-    "ignoredBuiltDependencies": [
-      "@biomejs/biome"
-    ],
-    "onlyBuiltDependencies": [
-      "@biomejs/biome",
-      "@swc/core",
-      "esbuild",
-      "sharp"
-    ]
-  }
+  "volta": {
+    "node": "22.14.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }

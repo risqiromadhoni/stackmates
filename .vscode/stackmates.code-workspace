@@ -1,0 +1,52 @@
+{
+  "folders": [
+    {
+      "name": "🔥 root",
+      "path": "../"
+    },
+    {
+      "name": "🚀 @stackmates/web",
+      "path": "../apps/web"
+    },
+    {
+      "name": "⚙️ @stackmates/utils",
+      "path": "../packages/utils"
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      "biomejs.biome",
+      "ms-vscode.vscode-typescript-next"
+    ]
+  },
+  "settings": {
+    "[javascript]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[typescript]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[javascriptreact]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[typescriptreact]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[json]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[jsonc]": { "editor.defaultFormatter": "biomejs.biome" },
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never",
+      "source.organizeImports.biome": "explicit",
+      "source.fixAll": "never",
+      "quickfix.biome": "explicit"
+    },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "vite.autoStart": false,
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true,
+      "**/node_modules": true,
+      "**/apps": true,
+      "**/packages": true
+    }
+  }
+}

@@ -9,7 +9,12 @@
 	"files": {
 		"ignoreUnknown": false,
 		"ignore": ["node_modules", "dist", "tsconfig*.json"],
-		"include": ["commitlint.config.js", "packages", "apps"]
+		"include": [
+			"commitlint.config.js",
+			"packages",
+			"apps",
+			"vitest.workspace.ts"
+		]
 	},
 	"formatter": {
 		"enabled": true,

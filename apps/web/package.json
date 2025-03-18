@@ -6,20 +6,30 @@
 		"dev": "next dev --turbopack",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"test": "vitest",
+		"test:browser": "vitest"
 	},
 	"dependencies": {
-		"@stackmates/components": "workspace:*",
+		"next": "15.2.2",
 		"react": "^19.0.0",
-		"react-dom": "^19.0.0",
-		"next": "15.2.2"
+		"react-dom": "^19.0.0"
 	},
 	"devDependencies": {
-		"typescript": "^5",
+		"@tailwindcss/postcss": "^4",
+		"@testing-library/dom": "^10.4.0",
+		"@testing-library/react": "^16.2.0",
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
-		"@tailwindcss/postcss": "^4",
-		"tailwindcss": "^4"
+		"@vitejs/plugin-react": "^4.3.4",
+		"@vitest/browser": "^3.0.9",
+		"jsdom": "^26.0.0",
+		"playwright": "^1.51.1",
+		"tailwindcss": "^4",
+		"typescript": "^5",
+		"vite-tsconfig-paths": "^5.1.4",
+		"vitest": "^3.0.9",
+		"vitest-browser-react": "^0.1.1"
 	}
 }
