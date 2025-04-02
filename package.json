@@ -1,13 +1,41 @@
 {
   "name": "stackmates",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "An AI-driven fintech platform that empowers users to create group savings, invest together, and track financial goals with automation and gamification. Seamlessly link bank accounts, automate savings, and invest in fractional stocks or crypto while engaging with a community-driven experience. Secure transactions, real-time chat, and rewards-based gamification make financial collaboration easy and engaging.",
+  "keywords": [
+    "Fintech",
+    "Group Savings",
+    "Social Investing",
+    "AI Finance",
+    "Automated Savings",
+    "Investment Pools",
+    "Crowdsourced Investing",
+    "Fractional Shares",
+    "Bank Integration",
+    "Plaid",
+    "Stripe",
+    "PayPal",
+    "Alpaca",
+    "Robinhood",
+    "Gamified Finance",
+    "Financial Planning",
+    "Smart Budgeting",
+    "Wealth Management",
+    "pnpm",
+    "Monorepo",
+    "PNPM Monorepo"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "biome lint .",
+    "format": "biome format .",
+    "check": "biome check .",
+    "check:fix": "biome check --write ."
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.6.5"
+  "packageManager": "pnpm@10.6.5",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
+  }
 }
